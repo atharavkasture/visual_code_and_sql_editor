@@ -1,0 +1,34 @@
+{
+  "tables": [
+    {
+      "name": "orders",
+      "columns": [
+        { "name": "order_id", "type": "INT", "pk": true },
+        { "name": "customer_id", "type": "INT" },
+        { "name": "order_date", "type": "DATE" },
+        { "name": "status", "type": "TEXT" },
+        { "name": "total_amount", "type": "DECIMAL" }
+      ]
+    },
+    {
+      "name": "customers",
+      "columns": [
+        { "name": "customer_id", "type": "INT", "pk": true },
+        { "name": "first_name", "type": "TEXT" },
+        { "name": "last_name", "type": "TEXT" },
+        { "name": "email", "type": "TEXT" },
+        { "name": "signup_date", "type": "DATE" }
+      ]
+    },
+    {
+        "name": "products",
+        "columns": [
+            { "name": "product_id", "type": "INT", "pk": true },
+            { "name": "product_name", "type": "TEXT" },
+            { "name": "category", "type": "TEXT" },
+            { "name": "price", "type": "DECIMAL" },
+            { "name": "stock_quantity", "type": "INT" }
+        ]
+    }
+  ]
+}

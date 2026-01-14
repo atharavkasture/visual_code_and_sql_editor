@@ -1,0 +1,10 @@
+[
+  { "order_id": 101, "customer_id": 1, "order_date": "2025-08-15", "status": "Shipped", "total_amount": 150.50 },
+  { "order_id": 102, "customer_id": 2, "order_date": "2025-08-16", "status": "Processing", "total_amount": 75.00 },
+  { "order_id": 103, "customer_id": 1, "order_date": "2025-08-16", "status": "Delivered", "total_amount": 200.00 },
+  { "order_id": 104, "customer_id": 3, "order_date": "2025-08-17", "status": "Shipped", "total_amount": 45.25 },
+  { "order_id": 105, "customer_id": 2, "order_date": "2025-08-18", "status": "Shipped", "total_amount": 300.75 },
+  { "order_id": 106, "customer_id": 4, "order_date": "2025-08-18", "status": "Pending", "total_amount": 99.99 },
+  { "order_id": 107, "customer_id": 3, "order_date": "2025-08-19", "status": "Processing", "total_amount": 120.00 },
+  { "order_id": 108, "customer_id": 1, "order_date": "2025-08-19", "status": "Shipped", "total_amount": 80.40 }
+]
