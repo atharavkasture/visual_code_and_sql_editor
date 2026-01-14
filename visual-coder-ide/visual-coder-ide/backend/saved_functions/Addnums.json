@@ -1,0 +1,60 @@
+{
+  "name": "Addnums",
+  "params": [
+    "int a",
+    "String b"
+  ],
+  "desc": "",
+  "diagram": {
+    "nodes": [
+      {
+        "id": "node_1",
+        "type": "functionDefine",
+        "position": {
+          "x": 424.99813468807145,
+          "y": 6.1517000829474
+        },
+        "data": {
+          "name": "Addnums",
+          "params": "int a, String b"
+        },
+        "width": 240,
+        "height": 207,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 424.99813468807145,
+          "y": 6.1517000829474
+        },
+        "dragging": false
+      },
+      {
+        "id": "node_2",
+        "type": "print",
+        "position": {
+          "x": 700.3155727695936,
+          "y": 261.94731801459443
+        },
+        "data": {
+          "value": "a + b"
+        },
+        "width": 240,
+        "height": 122,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 700.3155727695936,
+          "y": 261.94731801459443
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "source": "node_1",
+        "sourceHandle": "body",
+        "target": "node_2",
+        "targetHandle": null,
+        "id": "reactflow__edge-node_1body-node_2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+.custom-node {
+    @apply bg-gray-700 border-2 border-gray-600 rounded-lg p-3 text-white w-60 shadow-lg;
+}
+.custom-node-header {
+    @apply text-cyan-400 font-bold mb-2 pb-1 border-b border-gray-600;
+}
+.custom-node-content {
+    @apply flex flex-col gap-2;
+}
+.custom-node-label {
+    @apply text-sm text-gray-300;
+}
+.custom-node-input {
+    @apply bg-gray-800 border border-gray-500 rounded px-2 py-1 text-sm w-full focus:outline-none focus:ring-2 focus:ring-cyan-500;
+}
+.node-tooltip {
+    @apply text-xs text-gray-400 italic ml-2;
+}

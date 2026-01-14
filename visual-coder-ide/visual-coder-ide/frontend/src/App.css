@@ -1,0 +1,65 @@
+/* 1. Import Custom Node Styles (If/Else, Assign, etc.) */
+@import './components/CustomNodes/NodeStyles.css';
+
+/* 2. Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Global Layout Resets (CRITICAL for Full Screen IDEs) */
+html, body, #root {
+  height: 100%;       /* Force full viewport height */
+  width: 100%;        /* Force full viewport width */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;   /* Prevent window scrollbars (Editor handles scrolling) */
+  
+  /* Default Theme Settings */
+  background-color: #111827; /* Matches Tailwind 'bg-gray-900' */
+  color: #f3f4f6;     /* Matches Tailwind 'text-gray-100' */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Text Smoothing for better code readability */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Global Dark Scrollbar Styling (Webkit Browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937; /* gray-800 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563; /* gray-600 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; /* gray-500 */
+}
+
+/* 5. React Flow Specific Overrides (Optional Tweaks) */
+.react-flow__edge-path {
+  stroke-width: 5;
+  stroke: #000000; /* Slate-400 for better visibility on dark bg */
+}
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  background-color: #cbd5e1; /* Slate-300 */
+}
+
+/* 6. Utility Class for Hiding Scrollbars (if needed) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

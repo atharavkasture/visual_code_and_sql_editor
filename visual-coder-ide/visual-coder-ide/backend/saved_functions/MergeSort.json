@@ -1,0 +1,170 @@
+{
+  "name": "MergeSort",
+  "params": [
+    "int array[]",
+    "int start",
+    "int end"
+  ],
+  "desc": "",
+  "diagram": {
+    "nodes": [
+      {
+        "id": "imported_1764699235958_vz5b2s2v7",
+        "type": "functionDefine",
+        "position": {
+          "x": 19.640117367088862,
+          "y": 371.0978587933837
+        },
+        "data": {
+          "name": "MergeSort",
+          "params": "int array[], int start, int end"
+        },
+        "width": 240,
+        "height": 207,
+        "selected": true,
+        "positionAbsolute": {
+          "x": 19.640117367088862,
+          "y": 371.0978587933837
+        },
+        "dragging": false
+      },
+      {
+        "id": "imported_1764699235958_fcihikl6h",
+        "type": "if",
+        "position": {
+          "x": 357.4911471606081,
+          "y": 406.75771878943056
+        },
+        "data": {
+          "condition": "start < end"
+        },
+        "width": 240,
+        "height": 122,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 357.4911471606081,
+          "y": 406.75771878943056
+        }
+      },
+      {
+        "id": "imported_1764699235958_6ogp0o6ua",
+        "type": "assign",
+        "position": {
+          "x": 653.7089675742543,
+          "y": 372.575906605682
+        },
+        "data": {
+          "varName": "mid",
+          "value": "start + (end - start) / 2",
+          "dataType": "int"
+        },
+        "width": 240,
+        "height": 273,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 653.7089675742543,
+          "y": 372.575906605682
+        }
+      },
+      {
+        "id": "imported_1764699235958_a60deylm4",
+        "type": "functionCall",
+        "position": {
+          "x": 952.9972147627233,
+          "y": 417.9122254299302
+        },
+        "data": {
+          "name": "MergeSort",
+          "args": "array, start, mid"
+        },
+        "width": 240,
+        "height": 187,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 952.9972147627233,
+          "y": 417.9122254299302
+        }
+      },
+      {
+        "id": "imported_1764699235958_piekmf1cg",
+        "type": "functionCall",
+        "position": {
+          "x": 1254.1245182120733,
+          "y": 423.0047733885453
+        },
+        "data": {
+          "name": "MergeSort",
+          "args": "array, mid+1, end"
+        },
+        "width": 240,
+        "height": 187,
+        "selected": false,
+        "positionAbsolute": {
+          "x": 1254.1245182120733,
+          "y": 423.0047733885453
+        },
+        "dragging": false
+      },
+      {
+        "id": "imported_1764699235958_pl0cbm3rn",
+        "type": "functionCall",
+        "position": {
+          "x": 1563.5038593879085,
+          "y": 422.2700236032608
+        },
+        "data": {
+          "name": "Merge",
+          "args": "array, start, mid, end"
+        },
+        "width": 240,
+        "height": 187,
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 1563.5038593879085,
+          "y": 422.2700236032608
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "imported_1764699235958_vz5b2s2v7",
+        "sourceHandle": "body",
+        "target": "imported_1764699235958_fcihikl6h",
+        "targetHandle": null,
+        "id": "imported_1764699235958_udzc2mqqg"
+      },
+      {
+        "source": "imported_1764699235958_fcihikl6h",
+        "sourceHandle": "true",
+        "target": "imported_1764699235958_6ogp0o6ua",
+        "targetHandle": null,
+        "id": "imported_1764699235958_6xw6js3ry"
+      },
+      {
+        "source": "imported_1764699235958_6ogp0o6ua",
+        "sourceHandle": null,
+        "target": "imported_1764699235958_a60deylm4",
+        "targetHandle": null,
+        "id": "imported_1764699235958_vu1of177p"
+      },
+      {
+        "source": "imported_1764699235958_a60deylm4",
+        "sourceHandle": null,
+        "target": "imported_1764699235958_piekmf1cg",
+        "targetHandle": null,
+        "id": "imported_1764699235958_sdz8ocvqm"
+      },
+      {
+        "source": "imported_1764699235958_piekmf1cg",
+        "sourceHandle": null,
+        "target": "imported_1764699235958_pl0cbm3rn",
+        "targetHandle": null,
+        "id": "imported_1764699235958_29q9igty4"
+      }
+    ]
+  }
+}

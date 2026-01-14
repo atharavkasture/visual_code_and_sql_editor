@@ -1,0 +1,6 @@
+{
+  "python": "x = 10\nprint(\"x\")",
+  "java": "public class Main {\n    public static void main(String[] args) {\n        int x = 10;\n        System.out.println(\"x\");\n    }\n\n}",
+  "cpp": "#include <iostream>\n#include <string>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n\n\n\nint main() {\n    int x = 10;\n    cout << x << endl;\n    return 0;\n}",
+  "csharp": "using System;\nusing System.Collections.Generic;\n\nnamespace GeneratedCode {\n    public class Program {\n        public static void Main(string[] args) {\n            int x = 10;\n            Console.WriteLine(x);\n        }\n\n\n    }\n}"
+}

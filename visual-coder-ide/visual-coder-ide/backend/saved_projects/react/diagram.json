@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "input",
+      "data": {
+        "label": "Start"
+      },
+      "position": {
+        "x": -32.502636046229156,
+        "y": -146.30612620900908
+      },
+      "deletable": false,
+      "width": 150,
+      "height": 40,
+      "selected": false,
+      "positionAbsolute": {
+        "x": -32.502636046229156,
+        "y": -146.30612620900908
+      },
+      "dragging": false
+    },
+    {
+      "id": "node_1",
+      "type": "assign",
+      "position": {
+        "x": -53.033539514028405,
+        "y": -36.93396657230373
+      },
+      "data": {
+        "varName": "x",
+        "value": "10",
+        "dataType": "int"
+      },
+      "width": 240,
+      "height": 273,
+      "selected": false,
+      "positionAbsolute": {
+        "x": -53.033539514028405,
+        "y": -36.93396657230373
+      },
+      "dragging": false
+    },
+    {
+      "id": "node_2",
+      "type": "print",
+      "position": {
+        "x": 466.4128341118147,
+        "y": -7.942419556499317
+      },
+      "data": {
+        "value": "x"
+      },
+      "width": 240,
+      "height": 122,
+      "selected": true,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 466.4128341118147,
+        "y": -7.942419556499317
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "start",
+      "sourceHandle": null,
+      "target": "node_1",
+      "targetHandle": null,
+      "id": "reactflow__edge-start-node_1"
+    },
+    {
+      "source": "node_1",
+      "sourceHandle": null,
+      "target": "node_2",
+      "targetHandle": null,
+      "id": "reactflow__edge-node_1-node_2"
+    }
+  ]
+}
