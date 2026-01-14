@@ -22,7 +22,7 @@ Make sure you have these installed first:
 **1. Clone the Project**
 ```
 git clone https://github.com/atharavkasture/visual_code_and_sql_editor.git
-cd visual_code_and_sql_editor
+cd visual-coder-ide/visual-coder-ide
 ```
 
 **2. Start the Backend (Terminal 1)**
