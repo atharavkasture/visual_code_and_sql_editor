@@ -11,8 +11,6 @@ const PORT = 3002; // Local Port
 // System API Key from .env
 const SYSTEM_GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-// --- LOCAL Database Configuration (As requested) ---
-
 
 const dbConfigMySQL = {
     host: process.env.MYSQL_HOST,
@@ -200,4 +198,5 @@ connectToDatabases().then(() => {
     app.listen(PORT, () => {
         console.log(`🚀 Backend server running on http://localhost:${PORT}`);
     });
+
 });
